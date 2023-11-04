@@ -33,6 +33,19 @@ a {
     font-weight: 600;
 }
 
+div .languages {
+    margin-right: 2rem;
+}
+
+.languages {
+    display: inline;
+    padding: 0;
+}
+
+.languages * {
+    display: inline;
+}
+
 main {
     width: min(74rem, 100% - 4rem);
     margin: 0 auto;
