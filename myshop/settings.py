@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'orders',
     'coupons',
     'rosetta',  # Third-party translation ui
+    'parler',  # Third-party models translation
 ]
 
 MIDDLEWARE = [
@@ -143,3 +144,14 @@ MEDIA_ROOT = BASE_DIR / 'media/'
 CART_SESSION_ID = 'cart'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en'},
+        {'code': 'ru'},
+    ),
+    'default': {
+        'fallback': 'en',
+        'hide_untranslated': False,
+    }
+}
