@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'cart',
     'orders',
     'coupons',
+    'rosetta',  # Third-party translation ui
 ]
 
 MIDDLEWARE = [
